@@ -30,7 +30,6 @@ function get_shopping_cart(barcode_list){
             shopping_cart.push(item);
         }
     });
-    
     return shopping_cart;
 }
 
@@ -51,5 +50,5 @@ function get_shopping_lists(shopping_cart){
     }
 	);
     list=list+'\n'+'\n'+'----------------------'+'\n'+'总计:'+sum.toFixed(2)+'(元)'+'\n'+'**********************';
-        return list
+        return list;
     }
