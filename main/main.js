@@ -50,6 +50,6 @@ function get_shopping_lists(shopping_cart){
         //}
     }
 	);
-    list=list+'\n'+list_free+'\n'+'----------------------'+'\n'+'总计:'+sum.toFixed(2)+'(元)'+'\n'+'节省:'+save.toFixed(2)+'(元)'+'\n'+'**********************';
+    list=list+'\n'+'\n'+'----------------------'+'\n'+'总计:'+sum.toFixed(2)+'(元)'+'\n'+'节省:'+save.toFixed(2)+'(元)'+'\n'+'**********************';
         return list
     }
