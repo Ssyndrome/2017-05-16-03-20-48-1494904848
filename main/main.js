@@ -26,7 +26,6 @@ function get_shopping_cart(barcode_list){
     items.forEach(function(item){
         if(barcode_list[item.barcode]){
             item.count=barcode_list[item.barcode];
-            //item.free=Math.floor(item.count/3);
             shopping_cart.push(item);
         }
     });
@@ -38,7 +37,7 @@ function get_shopping_lists(shopping_cart){
     var sum=0;
     shopping_cart.forEach(function(lists){
         var subtotal=lists.count*lists.price
-        list=list+'\n'+'名称:'+lists.name+',数量:'+lists.count+lists.unit+',单价:'+lists.price.toFixed(2)+'(元),小计:'+subtotal.toFixed(2)+'(元)'
+        list=list+'\n'+'名称:'+lists.name+',数量:'+lists.count+lists.unit+',单价:'+lists.price.toFixed(2)+'(元),小计:'+subtotal.toFixed(2)+'(元)';
         sum+=subtotal;
     }
 	);
