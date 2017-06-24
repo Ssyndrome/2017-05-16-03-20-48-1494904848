@@ -41,6 +41,6 @@ function get_shopping_lists(shopping_cart){
         sum+=subtotal;
     }
 	);
-    list=list+'\n'+'\n'+'----------------------'+'\n'+'总计:'+sum.toFixed(2)+'(元)'+'\n'+'**********************';
+    list=list+'\n'+'----------------------'+'\n'+'总计:'+sum.toFixed(2)+'(元)'+'\n'+'**********************';
         return list;
     }
