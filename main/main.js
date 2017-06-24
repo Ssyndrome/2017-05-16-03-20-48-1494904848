@@ -34,11 +34,11 @@ function get_shopping_cart(barcode_list){
 }
 
 function get_shopping_lists(shopping_cart){
-    var list='***<没钱赚商店>购物清单***\n';
+    var list='***<没钱赚商店>购物清单***';
     var sum=0;
     shopping_cart.forEach(function(lists){
         var subtotal=lists.count*lists.price;
-        list = list+'名称：'+lists.name+'，数量：'+lists.count+lists.unit+'，单价:'+lists.price.toFixed(2)+'(元)，小计：'+subtotal.toFixed(2)+'(元)\n';
+        list = list+'\n名称：'+lists.name+'，数量：'+lists.count+lists.unit+'，单价:'+lists.price.toFixed(2)+'(元)，小计：'+subtotal.toFixed(2)+'(元)';
         sum+=subtotal;
     }
 	);
