@@ -37,7 +37,7 @@ function get_shopping_lists(shopping_cart){
     var sum=0;
     shopping_cart.forEach(function(lists){
         var subtotal=lists.count*lists.price
-        list=list+'\n'+'名称：'+lists.name+'，数量：'+lists.count+lists.unit+'，单价:'+lists.price.toFixed(2)+'(元)，小计：'+subtotal.toFixed(2)+'(元)';
+        list=list+'\n名称：'+lists.name+'，数量：'+lists.count+lists.unit+'，单价:'+lists.price.toFixed(2)+'(元)，小计：'+subtotal.toFixed(2)+'(元)';
         sum+=subtotal;
     }
 	);
