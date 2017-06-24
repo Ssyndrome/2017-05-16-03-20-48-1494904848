@@ -4,7 +4,7 @@ const loadAllItems = require('./loadAllItems.js');
 module.exports = function main(inputs) {
     var barcode_list=get_barcode_list(inputs);
     var shopping_cart=get_shopping_cart(barcode_list);
-    var list_print=get_shopping_lists(shopping_cart);
+    var pos=get_shopping_lists(shopping_cart);
     console.log(pos);    
 };
 
